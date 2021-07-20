@@ -55,8 +55,10 @@
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>bug-service</module>
-		<module>email-service</module>
+		
+		<module>stockexchange-service</module>
+		<module>sector-service</module>
+		<module>company-service</module>
 	</modules>
 	<build>
 		<plugins>
