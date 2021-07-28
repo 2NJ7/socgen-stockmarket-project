@@ -1,4 +1,4 @@
-package com.nehajha.repositry;
+package com.nehajha.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.nehajha.entity.Sector;
 
 @Repository
-public interface SectorRepository extends JpaRepository<Sector, Integer> {
+public interface SectorRepository extends JpaRepository<Sector, Integer>{
 
 }

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.nehajha.entity.Company;
 import com.nehajha.entity.Sector;
-import com.nehajha.repositry.SectorRepository;
+import com.nehajha.repository.SectorRepository;
 
 @Service
 public class SectorService {

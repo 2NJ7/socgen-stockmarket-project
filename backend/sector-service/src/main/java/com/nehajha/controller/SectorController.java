@@ -40,6 +40,7 @@ public class SectorController {
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No Sector found for the given Id");
 	}
 	
+	
 	@PostMapping("/sector")
 	public ResponseEntity<Sector> createSector(@RequestBody Sector sector){
 		return ResponseEntity.ok(sectorService.createSector(sector));

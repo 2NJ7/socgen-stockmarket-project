@@ -2,6 +2,7 @@ package com.nehajha.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
@@ -9,7 +10,7 @@ import javax.persistence.ManyToOne;
 public class Company {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
 	private String name;
@@ -22,7 +23,8 @@ public class Company {
 	
 	private boolean listedinstockexchange;
 	
-	
+	@ManyToOne
+	private Sector sector;
 
 	public Company(int id, String name, long turnover, String ceo, String about, boolean listedinstockexchange,
 			Sector sector) {
@@ -36,8 +38,7 @@ public class Company {
 		this.sector = sector;
 	}
 
-	@ManyToOne
-	private Sector sector;
+	
 
 	public Company() {
 		super();
